@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* 共通 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.common{
+  max-width: 960px;
+  
+  margin: 20px auto;
+  padding: 30px;
+}
+/* ヘッダー */
+header{
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+ 
+  width: 100%;
+}
+header nav{
+  /* background-color: red; */
+  height: 70px;
+}
+header h1{
+  /* background-color: aqua; */
+  height: 70px;
+  line-height: 2;
+}
+header .insta{
+  width: 54px;
+  height: 36px;
+  
+  margin-top: 10px;
+}
+header ul{
+  display: flex;
+  width: 100%;
+  /* background-color: aquamarine; */
+}
+a{
+  display: block;
+  width: 100px;
+ line-height: 64px;
+ text-align: center;
+}
+/* メイン */
+.main{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* アバウト */
+
+h2{
+  text-align: center;
+  padding: 100px 0;
+}
+
+p{
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+/* ワーク */
+
+.work{
+  list-style: none;
+  
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 81%;
+}
+#works{
+  max-width: 960px;
+  
+}
+#works ul li{
+  display: flex;
+  width: calc((100%-48px)/3);
+}
+#works ul li img{
+  width: calc((100%-48px)/3);
+}
+/* ニュース */
+
+.news1{
+  border-top: solid gainsboro;
+  border-bottom: solid gainsboro;
+  padding: 10px 0;
+}
+.news2{
+  border-bottom: solid gainsboro;
+  padding: 10px 0;
+}
+
+.common{
+  width: fit-content;
+}
+.sma{
+  display: none;
+}
+
+/* コンタクト */
+
+label{
+  display: inline-block;
+  width: 150px;
+  vertical-align: top;
+  margin: 10px;
+}
+
+input{
+  width: 600px;
+  height: 30px;
+}
+
+textarea{
+  width: 600px;
+  height: 100px;
+}
+
+button{
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: block;
+  margin:32px auto;
+}
+footer{
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  padding: 10px 20px;
+  text-align: center;
+}
+@media (max-width: 600px){
+
+  body{
+    
+  }
+  header{
+    display: block;
+    text-align: center;
+    /* background-color: aqua; */
+  }
+  nav{
+    background-color: pink;
+    width: 90%;
+    padding: 0;
+  }
+  .work{
+    width: 100%;
+  }
+  .sma{
+    display: block;
+  }
+  
+  input{
+    width: 100%;
+  } 
+  
+}
